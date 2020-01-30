@@ -21,15 +21,17 @@ img {
 }
 
 a {
-  padding-left: 10px;
+  /*padding-left: 10px;*/
   text-decoration: none;
 }
 
+.menuespace {
+  padding: 50px 10px 20px 20px ;
+}
 a:hover {
   color: #00f;
 }
 footer {
-  margin: 150px 10px 0 -10px;
   background-color: #dda0dd;
   padding: 5px;
   height: auto;
@@ -39,6 +41,7 @@ footer {
 p{
   font-size: 2.2rem;
   text-align: center;
+  width: 100%;
 }
 
 body {
@@ -47,10 +50,67 @@ body {
   width: 100%;
 }
 
+/* le footer*/
+.conteneurfooter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+}
+.social{
+  position: relative;
+  border-radius: 100%;
+  width:59px;
+  height:60px;
+  justify-content: center;   /* aligner l'image verticalement*/
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+  margin-right : 10px;
+}
+.social img{
+  z-index: 1;
+  width: 59px;
+  height:60px;
+  
+}
+.fondface, .fondtrip, .fondgoogle, .fondreservation{
+  top: -60px;
+  z-index:2;
+  display: block;
+  width:59px;
+  height:60px;
+  position: absolute;
+  transition:0.5s;
+}
+
+.fondface{
+  background-color:blue;
+}
+.fondtrip{
+  background-color: green;
+}
+.fondgoogle{
+  background-color:yellow;
+}
+.social:hover .fondface{
+  top : 0;
+}
+.social:hover .fondtrip{
+  top : 0;
+}
+.social:hover .fondgoogle{
+  top : 0;
+}
+.contact{
+  display:inline-block;
+  list-style-type: none;
+  vertical-align: top;
+}
+
 @media screen and (max-width: 440px) {
-  html {
-    height: 650px;
-    width: 360px;
+  body {
+    width: 100%;
   }
   img {
     height: auto;
@@ -68,23 +128,4 @@ body {
   }
 }
 
-/*@media screen and (max-width: 360px) {*/
-/*  body  {*/
-/*    height: auto;*/
-/*    width: 360px;*/
-/*  }*/
-/*  img {*/
-/*    height: auto;*/
-/*    width: 100%;*/
-/*  }*/
-/*  header{*/
-/*    font-size: 2.2rem;*/
-/*  }*/
-/*  footer {*/
-/*    margin: 50px 0 0 0;*/
-/*    padding: 20px;*/
-/*  }*/
-/*  footer>p {*/
-/*    font-size: 1.4rem;*/
-/*  }*/
-/*}*/
+
