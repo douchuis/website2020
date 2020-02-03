@@ -1,0 +1,284 @@
+html {
+  font-size: 62.5%;
+}
+
+header {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.header-logo {
+  height: 50px;
+  width: 60px;
+}
+
+.body {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 20px;
+}
+
+.body a {
+  padding-right: 20px;
+  margin-left:20px;
+  text-decoration: none;
+  color: #00f;
+}
+
+a:hover {
+  color: #f00;
+}
+
+footer {
+  text-align: center;
+  font-size: 2.8rem;
+  background-color: #dda0dd;
+  margin-top:20px;
+  padding: 30px;
+  height: auto;
+}
+
+/****slideshow****/
+img {
+  width: 612px;
+  height: 344px;
+}
+.slide-container {
+  width: 612px;
+  height: 344px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.image-container {
+  width: 4896px;
+  height: 300px;
+  position: relative;
+  transition: left 2s;
+  -webkit-transition: left 2s;
+  -moz-transition: left 2s;
+  -o-transition: left 2s;
+}
+
+.slider-image {
+  float: left;
+  margin: 0;
+  padding:0;
+}
+
+.button-container {
+  top: -20px;
+  position: relative;
+}
+
+.slider-button {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+#image-1:target ~ .image-container {
+  left:0px;
+}
+
+#image-2:target ~ .image-container {
+  left:-614px;
+}
+#image-3:target ~ .image-container {
+  left:-1224px;
+}
+#image-4:target ~ .image-container {
+  left:-1836px;
+}
+#image-5:target ~ .image-container {
+  left:-2448px;
+}
+#image-6:target ~ .image-container {
+  left:-2500px;
+}
+#image-7:target ~ .image-container {
+  left:-3060px;
+}
+
+#image-8:target ~ .image-container {
+  left:-3672px;
+}
+
+/*******body grid*****/
+.body-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/**** about's text ***/
+.profile-content-wrapper {
+  padding-left: -100px;
+  margin-right: 50px;
+  justify-content: center;
+}
+.profile-content-wrapper h1 {
+  color: lightseagreen;
+  font-size: 3.2rem;
+}
+
+.profile-content-wrapper p {
+  font-size: 2.2rem;
+}
+
+/* le footer button social*/
+.conteneurfooter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+}
+.social{
+  position: relative;
+  border-radius: 100%;
+  width:59px;
+  height:60px;
+  justify-content: center;   /* aligner l'image verticalement*/
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+  margin-right : 10px;
+}
+.social img{
+  z-index: 1;
+  width: 59px;
+  height:60px;
+  
+}
+.fondface, .fondtrip, .fondgoogle{
+  top: -60px;
+  z-index:2;
+  display: block;
+  width:59px;
+  height:60px;
+  position: absolute;
+  transition:0.5s;
+}
+
+.fondface{
+  background-color:blue;
+}
+.fondtrip{
+  background-color: green;
+}
+.fondgoogle{
+  background-color:yellow;
+}
+.social:hover .fondface{
+  top : 0;
+}
+.social:hover .fondtrip{
+  top : 0;
+}
+.social:hover .fondgoogle{
+  top : 0;
+}
+.contact{
+  display:inline-block;
+  list-style-type: none;
+  vertical-align: top;
+}
+
+@media screen and (max-width: 755px) {
+  .body-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .profile-content-wrapper {
+    padding-left: 30px;
+  }
+footer {
+    font-size: 2.2rem ;
+  }
+}
+
+
+@media screen and (max-width: 440px) {
+  .body-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  /****slideshow****/
+  img {
+    width: 350px;
+    height: 196px;
+  }
+  .slide-container {
+    width: 350px;
+    height: 196px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .image-container {
+    width: 2800px;
+    height: 196px;
+    position: relative;
+    transition: left 2s;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+  }
+  
+  .slider-image {
+    float: left;
+    margin: 0;
+    padding:0;
+  }
+  
+  .button-container {
+    top: -20px;
+    position: relative;
+  }
+  
+  .slider-button {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  #image-1:target ~ .image-container {
+    left:0px;
+  }
+  
+  #image-2:target ~ .image-container {
+    left:-350px;
+  }
+  #image-3:target ~ .image-container {
+    left:-700px;
+  }
+  #image-4:target ~ .image-container {
+    left:-1050px;
+  }
+  #image-5:target ~ .image-container {
+    left:-1400px;
+  }
+  #image-6:target ~ .image-container {
+    left:-1750px;
+  }
+  #image-7:target ~ .image-container {
+    left:-2100px;
+  }
+  
+  #image-8:target ~ .image-container {
+    left:-2450px;
+  }
+
+  footer {
+    font-size: 2.2rem ;
+  }
+}

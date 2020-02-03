@@ -20,22 +20,24 @@ img {
   margin-top: 20px;
 }
 
-a {
-  /*padding-left: 10px;*/
-  text-decoration: none;
-}
-
 .menuespace {
   padding: 50px 10px 20px 20px ;
 }
-a:hover {
-  color: #00f;
+
+.body a {
+  color:#0000ff;
+  text-decoration: none;
 }
+
+.body a:hover {
+  color: #f00;
+  transition: color 0.5s;
+}
+
 footer {
   background-color: #dda0dd;
   padding: 5px;
   height: auto;
-  width: 100%;
 }
 
 p{
@@ -74,7 +76,7 @@ body {
   height:60px;
   
 }
-.fondface, .fondtrip, .fondgoogle, .fondreservation{
+.fondface, .fondtrip, .fondgoogle{
   top: -60px;
   z-index:2;
   display: block;
@@ -111,6 +113,7 @@ body {
 @media screen and (max-width: 440px) {
   body {
     width: 100%;
+    /*height: 666px;*/
   }
   img {
     height: auto;
@@ -120,8 +123,8 @@ body {
     font-size: 2.2rem;
   }
   footer {
-    margin: 50px 0 0 0;
-    padding: 20px;
+    margin-bottom: -10px;
+
   }
   footer>p {
     font-size: 1.6rem;
@@ -129,3 +132,27 @@ body {
 }
 
 
+/* 1792x828px at 326ppi */
+@media only screen
+and (device-width : 414px)
+and (device-height : 896px)
+and (-webkit-device-pixel-ratio : 2) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  img {
+    height: auto;
+    width: 100%;
+  }
+  header{
+    font-size: 2.2rem;
+  }
+  footer {
+    margin-bottom: -10px;
+    
+  }
+  footer>p {
+    font-size: 1.6rem;
+  }
+}
