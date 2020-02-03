@@ -1,0 +1,158 @@
+html {
+  font-size: 62.5%;
+}
+
+header {
+  text-align: center;
+  font-size: 3.6rem;
+}
+
+div{
+  text-align: center;
+  font-size: 2.6rem;
+}
+
+img {
+  width: 150px;
+  height: 100px;
+}
+.body {
+  margin-top: 20px;
+}
+
+.menuespace {
+  padding: 50px 10px 20px 20px ;
+}
+
+.body a {
+  color:#0000ff;
+  text-decoration: none;
+}
+
+.body a:hover {
+  color: #f00;
+  transition: color 0.5s;
+}
+
+footer {
+  background-color: #dda0dd;
+  padding: 5px;
+  height: auto;
+}
+
+p{
+  font-size: 2.2rem;
+  text-align: center;
+  width: 100%;
+}
+
+body {
+  background-color: #fff;
+  height: auto;
+  width: 100%;
+}
+
+/* le footer*/
+.conteneurfooter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+}
+.social{
+  position: relative;
+  border-radius: 100%;
+  width:59px;
+  height:60px;
+  justify-content: center;   /* aligner l'image verticalement*/
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+  margin-right : 10px;
+}
+.social img{
+  z-index: 1;
+  width: 59px;
+  height:60px;
+  
+}
+.fondface, .fondtrip, .fondgoogle{
+  top: -60px;
+  z-index:2;
+  display: block;
+  width:59px;
+  height:60px;
+  position: absolute;
+  transition:0.5s;
+}
+
+.fondface{
+  background-color:blue;
+}
+.fondtrip{
+  background-color: green;
+}
+.fondgoogle{
+  background-color:yellow;
+}
+.social:hover .fondface{
+  top : 0;
+}
+.social:hover .fondtrip{
+  top : 0;
+}
+.social:hover .fondgoogle{
+  top : 0;
+}
+.contact{
+  display:inline-block;
+  list-style-type: none;
+  vertical-align: top;
+}
+
+@media screen and (max-width: 440px) {
+  body {
+    width: 100%;
+    /*height: 666px;*/
+  }
+  img {
+    height: auto;
+    width: 100%;
+  }
+  header{
+    font-size: 2.2rem;
+  }
+  footer {
+    margin-bottom: -10px;
+
+  }
+  footer>p {
+    font-size: 1.6rem;
+  }
+}
+
+
+/* 1792x828px at 326ppi */
+@media only screen
+and (device-width : 414px)
+and (device-height : 896px)
+and (-webkit-device-pixel-ratio : 2) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  img {
+    height: auto;
+    width: 100%;
+  }
+  header{
+    font-size: 2.2rem;
+  }
+  footer {
+    margin-bottom: -10px;
+    
+  }
+  footer>p {
+    font-size: 1.6rem;
+  }
+}
