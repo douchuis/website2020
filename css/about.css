@@ -188,7 +188,7 @@ img {
   vertical-align: top;
 }
 
-@media screen and (max-width: 755px) {
+@media screen and (max-width: 855px) {
   .body-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -282,3 +282,5 @@ footer {
     font-size: 2.2rem ;
   }
 }
+
+
