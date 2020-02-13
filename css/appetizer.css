@@ -14,6 +14,15 @@ html {
   font-family: 'Black And White Picture', sans-serif;
 }
 
+.bar-menu>a {
+  text-decoration-line: none;
+  color: #000;
+}
+
+.bar-menu>a:hover {
+  color: #ff1492;
+}
+
 .bar-espace {
   border-right: 5px solid #080;
   padding-left: 10px;
@@ -58,4 +67,47 @@ body {
   margin: 0 200px 0 200px;
   padding-top: 20px;
   background-color: #fff;
+}
+
+@media only screen and (max-width : 1024px){
+  .container-body {
+    margin: 0 100px 0 100px;
+    padding-top: 20px;
+  }
+}
+
+@media only screen and (max-width : 768px){
+  .container-body {
+    margin: 0 20px 0 20px;
+    padding-top: 20px;
+  }
+}
+@media only screen and (max-width : 480px){
+  .container-body {
+    margin: 0 10px 0 10px;
+    padding-top: 20px;
+  }
+  
+  .body-content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .bar-menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-self: center;
+    background-color: transparent;
+    border: transparent;
+  }
+  
+  .bar-espace {
+    border-right: transparent;
+  }
+  
+  .bar-menu>a {
+    background-color: #20b2a2;
+    margin-bottom: 5px;
+    justify-content: center;
+  }
 }
