@@ -110,4 +110,8 @@ body {
     margin-bottom: 5px;
     justify-content: center;
   }
+  
+  .body-content>.alignleft {
+    justify-self: center;
+  }
 }
