@@ -1,0 +1,150 @@
+html {
+  font-size: 62.5%;
+}
+
+.bar-menu {
+  background-color: #e6e5e5;
+  border: 1px solid #808080;
+  font-size: 2.2rem;
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  /*position: fixed;*/
+  font-family: 'Black And White Picture', sans-serif;
+}
+
+.bar-menu>a {
+  text-decoration-line: none;
+  color: #000;
+}
+
+.bar-menu>a:hover {
+  color: #ff1492;
+}
+
+.bar-espace {
+  border-right: 5px solid #080;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.bar-last-element {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.body-content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  justify-self: center;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  font-size: 2.2rem;
+}
+
+.body-content> p{
+  padding-left: 20px;
+  border-bottom: 1px solid #808080;
+}
+
+.body-content> img {
+  border: 1px solid #e6e5e5;
+  padding-bottom: 20px;
+}
+
+.alignleft {
+  width: 250px;
+  height: 250px;
+  border-radius: 30%;
+  justify-self: right;
+}
+
+body {
+  background-color: #d6d9dc;
+}
+.container-body {
+  margin: 0 200px 0 200px;
+  padding-top: 20px;
+  background-color: #fff;
+}
+
+@media only screen and (max-width : 1200px){
+  .container-body {
+    margin: 0 80px 0 80px;
+    padding-top: 20px;
+  }
+}
+
+@media only screen and (max-width : 960px){
+  .container-body {
+    margin: 0 5px 0 5px;
+    padding-top: 20px;
+  }
+}
+
+@media only screen and (max-width : 768px){
+  .container-body {
+    margin: 0 5px 0 5px;
+    padding-top: 20px;
+  }
+  
+  .alignleft {
+    justify-items: left;
+    justify-content: left;
+    width: 70%;
+    height: auto;
+    margin-top:10px;
+    padding-top:20px;
+    padding-left: 0;
+  }
+  
+  .body-content {
+    font-size : 1.6rem;
+    grid-template-columns: 100px 1fr;
+  }
+}
+@media only screen and (max-width : 480px){
+  .container-body {
+    margin: 0 10px 0 10px;
+    padding-top: 20px;
+  }
+  
+  .body-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-self: left;
+    justify-content: left;
+    justify-items: left;
+  }
+  
+  .bar-menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-self: center;
+    background-color: transparent;
+    border: transparent;
+  }
+  
+  .bar-espace {
+    border-right: transparent;
+  }
+  
+  .bar-menu>a {
+    background-color: #20b2a2;
+    margin-bottom: 5px;
+    justify-content: center;
+  }
+  
+  .body-content> .alignleft {
+    justify-content: left;
+    padding-left: 0;
+    margin-left:-20px;
+    justify-self: center;
+    
+  }
+  
+  img {
+    margin-left:10px;
+  }
+}
