@@ -142,10 +142,13 @@ img {
 
 /* le footer button social*/
 .conteneurfooter{
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
   padding: 30px 10px;
+  border-bottom: 5px double #20b2a2;
 }
 .social{
   position: relative;
