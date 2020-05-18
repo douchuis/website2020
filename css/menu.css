@@ -2,6 +2,16 @@ html {
   font-size: 62.5%;
 }
 
+
+#two:hover,
+#four:hover,
+#six:hover,
+#eight:hover,
+#ten:hover,
+#twelve:hover {
+  border: 5px double cyan;
+}
+
 .maincourse {
   display: grid;
   grid-template-columns: 50% 50%;
