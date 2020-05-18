@@ -45,8 +45,9 @@ footer {
 
 .slide-container{
   border-bottom: 5px solid lightseagreen;
-  padding-bottom: 20px;
+  border-top: 5px solid lightseagreen;
 }
+
 /****slideshow****/
 img {
   width: 612px;
