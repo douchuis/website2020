@@ -38,6 +38,15 @@ footer {
   height: auto;
 }
 
+.profile-content-wrapper {
+  border-left: 2px dotted lightseagreen;
+  padding-left: 10px;
+}
+
+.slide-container{
+  border-bottom: 5px solid lightseagreen;
+  padding-bottom: 20px;
+}
 /****slideshow****/
 img {
   width: 612px;
